@@ -1,0 +1,188 @@
+/* --------------------- Responsive --------------------- */
+@media screen and (max-width: 1720px){
+    .verify-text {
+        font-size: 0.75em !important;
+        top: 28% !important;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .verify-text{
+        display: none;
+    }
+
+    .verify-header{
+        top: 16% !important;
+        font-size: 26px !important;
+    }
+
+    .verify-submit{
+        top: 43% !important;
+        font-size: 0.79em !important;
+        /* height:  */
+    }
+
+    .re-verify{
+        top: 65% !important;
+        font-size: 0.625em !important;
+    }
+
+    .verify-input{
+        top: 42% !important;
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1050px){
+    .verify-header{
+        top: 16% !important;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 900px) {
+    .verify-header{
+        top: 16% !important;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 800px) {
+    .verify-header{
+        top: 16% !important;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 700px) {
+    .verify-form {
+        left: 30% !important;
+    }
+    .verify-header{
+        top: 16% !important;
+    }
+}
+
+@media screen and (max-width: 700px) and (min-width: 600px) {
+    .verify-form {
+        left: 26% !important;
+    }
+    .verify-header{
+        top: 16% !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .verify-form {
+        left: 23% !important;
+    }
+    .verify-header{
+        top: 16% !important;
+    }
+}
+
+/* --------------------- Main CSS --------------------- */
+
+/* Background and Form */
+.verify-background-container {
+    top: 9%;
+    left: 0%;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    z-index: 1;
+    background-color: #d8d8d6;
+    opacity: 0.9;
+}
+
+.verify-container{
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    min-width: 600px !important;
+    min-height: 400px !important;
+    opacity: 1 !important;
+}
+
+.verify-form {
+    border: solid 2px #d2b356;
+    border-radius: 25px;
+    position: fixed;
+    top: 35%;
+    display: grid;
+    place-items: center;
+    left: 35%;
+    width: 30%;
+    height: 275px;
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 275px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 10px 10px 10px 10px darkgrey;
+    opacity: 1;
+}
+
+/* Form Content */
+.verify-header {
+    position: absolute;
+    top: 6%;
+    left: 25%;
+    width: 50%;
+    min-height: 100px;
+    max-width: 300px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Poppins-Bold !important;
+}
+
+.verify-text{
+    position: absolute;
+    top: 27%;
+    left: 25%;
+    width: 50%;
+    text-align: center;
+    text-wrap: wrap;
+    color: rgb(99, 99, 99);
+    font-family: Poppins-Medium;
+}
+
+.verify-submit{
+    position: absolute;
+    top: 50%;
+    left: 32.5%;
+    width: 35%;
+    height: 13%;
+    border-radius: 10px;
+    background-color: white;
+    font-weight: bold;
+    font-family: Poppins-Medium;
+}
+
+.verify-submit:hover{
+    background-color: #d2b356 !important;
+    color: white !important;
+}
+
+.re-verify{
+    position: absolute;
+    top: 68%;
+    left: 37.5%;
+    width: 25%;
+    height: 11.5%;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: Poppins-Medium;
+}
+
+.re-verify:hover{
+    background-color: #d2b356 !important;
+    background-color: #cbcbcb !important; 
+    color: white !important;
+}
+
+/* Footer */
+.verify-footer {
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+}

@@ -1,0 +1,452 @@
+/* --------------------- Fonts --------------------- */
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+}
+
+@font-face {
+font-family: Poppins-Medium;
+src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+}
+
+@font-face {
+font-family: Poppins-Bold;
+src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+}
+
+@font-face {
+font-family: Poppins-SemiBold;
+src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+}
+
+@font-face {
+    font-family: GALLANT;
+    src: url('https://fonts.cdnfonts.com/css/gallant')
+}
+
+
+/* --------------------- Responsive --------------------- */
+@media screen and (max-width: 1300px) {
+    .return-text {
+        display: none;
+    }
+
+    .return-link {
+        left: 40% !important;
+    }
+}
+
+
+@media screen and (max-width: 1100px) {
+    .reg-submit {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 800px) {
+    .button-bridge {
+        display: none;
+    }
+
+    .reg-nav-logo{
+        left: 86% !important;
+    }
+
+    .reg-submit {
+        top: 73% !important;
+    }
+    .return-link {
+        top: 400% !important;
+    }
+    
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+    .reg-header {
+        font-size: 28px;
+    }
+
+    .reg-form{
+        left: 30% !important;
+    }
+
+    .reg-nav-logo{
+        left: 82.5% !important;
+    }
+
+    .reg-submit {
+        top: 73% !important;
+    }
+
+    .return-link {
+        top: 400% !important;
+    }
+
+    .button-bridge {
+        display: none;
+    }
+
+    #facebook-signup-icon{
+        font-size: 1em !important;
+    }
+
+    #google-signup-icon{
+        font-size: 1em !important;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .reg-header {
+        font-size: 28px;
+    }
+
+    .reg-form{
+        left: 25% !important;
+    }
+
+    .reg-nav-logo{
+        left: 78% !important;
+
+    }
+
+    .reg-submit {
+        top: 73% !important;
+    }
+
+    .return-link {
+        top: 400% !important;
+    }
+    
+    .button-bridge {
+        display: none;
+    }
+
+    #facebook-signup-icon{
+        font-size: 1em !important;
+    }
+
+    #google-signup-icon{
+        font-size: 1em !important;
+    }
+
+}
+    
+@media screen and (max-height: 600px) {
+    .reg-navbar {
+        display: none;
+    }
+
+    .reg-background-container {
+        top: 0% !important;
+        left: 0%;
+        position: absolute;
+        width: 100%;
+        height: 100% !important;
+    }
+
+
+}
+
+
+/* --------------------- Main CSS --------------------- */
+
+/* Navbar */
+.reg-navbar { 
+    position: absolute;
+    width: 100%;
+    height: 9%;
+    background-color: white;
+    border-bottom: solid 2px #d2b356;    
+}
+
+.reg-back-button{
+    background: none;
+    position: absolute;
+    width: 1.5%;
+    left: 3%;
+    top: 29%;
+    height: 38%;
+    border-radius: 50%;
+    border: none;
+    text-align: left;
+}
+
+#back-button-icon {
+    color: rgb(80, 78, 78);
+    text-align: left;
+}
+
+.reg-nav-logo{
+    position: fixed;
+    width: 8%;
+    min-width: 100px;
+    top: 3%;
+    left: 88%;
+}
+
+
+/* Container and Form */
+.reg-background-container {
+    top: 9%;
+    left: 0%;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    z-index: 1;
+    background-color: #d8d8d6;
+    opacity: 0.9;
+}
+
+.reg-container{
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    min-width: 600px !important;
+    min-height: 400px !important;
+    opacity: 1 !important;
+}
+
+.reg-form {
+    border: solid 2px #d2b356;
+    border-radius: 25px;
+    position: fixed;
+    top: 18%;
+    display: grid;
+    place-items: center;
+    left: 34%;
+    width: 32%;
+    height: 70%;
+    min-width: 300px;
+    max-width: 600px;
+    min-height: 450px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 10px 10px 10px 10px darkgrey;
+    opacity: 1;
+}
+
+/* Form Content */
+.reg-header {
+    position: relative;
+    top: -34%;
+    left: 0%;
+    width: 50%;
+    min-height: 100px;
+    max-width: 300px;
+    text-align: center;
+    font-weight: strong;
+    font-family: Poppins-Bold !important;
+}
+
+.reg-input-fn {
+    padding: 5px 0px 0px 5%;
+    max-width: 300px !important;
+    position: absolute;
+    top: 21%;
+    width: 70%;
+    border: 2px solid black;;
+    background: #f1f1f1;
+    text-align: left;
+}
+
+.reg-input-ln {
+    padding: 5px 0px 0px 5%;
+    max-width: 300px !important;
+    position: absolute;
+    top: 30.5%;
+    width: 70%;
+    border: 2px solid black;;
+    background: #f1f1f1;
+    text-align: left;
+}
+
+.reg-input-mail {
+    padding: 5px 0px 0px 5%;
+    max-width: 300px !important;
+    position: absolute;
+    top: 40%;
+    width: 70%;
+    border: 2px solid black;;
+    background: #f1f1f1;
+    text-align: left;
+}
+
+.reg-input-p1 {
+    padding: 5px 0px 0px 5%;
+    max-width: 300px !important;
+    position: absolute;
+    top: 49.5%;
+    width: 70%;
+    border: 2px solid black;;
+    background: #f1f1f1;
+    text-align: left;
+}
+
+.reg-input-p2 {
+    padding: 5px 0px 0px 5%;
+    max-width: 300px !important;
+    position: absolute;
+    top: 59%;
+    width: 70%;
+    border: 2px solid black;;
+    background: #f1f1f1;
+    text-align: left;
+}
+
+.reg-submit {
+    padding: 5px 0px 0px;
+    max-width: 300px !important;
+    position: absolute;
+    top: 70%;
+    width: 40%;
+    border: 2px solid black;;
+    background: white;
+    margin-bottom: 2.5%;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: strong;
+    font-family: Poppins-Bold;
+    
+}
+
+.return-link-div {
+    padding: 5px 0px 0px;
+    max-width: 300px !important;
+    position: absolute;
+    top: 77%;
+    width: 70%;
+    border: none;
+    text-align: center;
+    margin-bottom: 2.5%;
+    font-weight: strong;
+    text-wrap: wrap;
+    
+}
+
+.return-text {
+    position: absolute;
+    top: 0%;
+    left: 22%;
+    text-align: left;
+    color: darkgray;
+    font-family: Poppins-Small !important;
+
+}
+
+.return-link {
+    position: absolute;
+    top: 0%;
+    left: 59%;
+    border: none;
+    margin-bottom: 2.5%;
+    text-align: center;
+    font-weight: strong;
+    text-decoration: underline;
+    font-family: Poppins-Small;
+    
+}
+
+.button-bridge{ 
+    position: absolute;
+    top: 81.5%;
+    max-width: 100px;
+}
+
+.reg-bridge-text{
+    display: inline;
+    font-family: Poppins-Small;
+    color: rgb(182, 180, 180);
+}
+
+.reg-bridge-line1{
+    display: inline;
+    left: -70%;
+}
+
+.reg-bridge-line2{
+    display: inline;
+    left: 107%;
+}
+
+hr {
+    position: absolute;
+    height: 1px;
+    width: 63%;
+    border: 0;
+    border-top: 1px solid #8a8888;
+    margin: 0.88em 0;
+    padding: 0;
+}
+
+.reg-social-buttons{
+    position: absolute;
+    top: 88%;
+    left: 25%;
+    width: 50%;
+    background-color: white;
+}
+
+.reg-facebook-signup-link{
+    position: absolute;
+    left: 40%;
+    top: 88%;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+}
+
+.reg-facebook-signup-button{
+    position: absolute;
+    left: 0%;
+    width: 80%;
+    height: 80%;
+    border: none;
+    background: none;
+}
+
+#facebook-signup-icon{
+    color: rgb(4, 4, 219, 0.6);
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.reg-google-signup-link{
+    position: absolute;
+    left: 52%;
+    top: 88%;
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+}
+
+.reg-google-signup-button{
+    position: absolute;
+    left: 0%;
+    width: 80%;
+    height: 80%;
+    border: none;
+    background-color: white;
+}
+
+#google-signup-icon{
+    opacity: 0.6;
+    font-size: 1.5em;
+}
+
+.form-button {
+    margin-bottom: 3%;
+    min-height: 20px !important;
+}
+
+/* Footer */
+.reg-footer {
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+}
+
+  
